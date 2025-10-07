@@ -4,15 +4,18 @@ public class Reverse_String {
 
 	public static void main(String[] args) {
 		String str = "Shubham";
+
 //Using String Buffer
 		StringBuffer sb = new StringBuffer(str);
 		System.out.println("Original String is:" + str);
 		System.out.println("Reversed String is:" + sb.reverse());
+
 //Using String Builder
 		String str1 = "Sultane";
 		StringBuilder sb1 = new StringBuilder(str1);
 		System.out.println("Original string is:" + str1);
 		System.out.println("Reversed string is:" + sb1.reverse());
+
 // Using toCharArray method
 		String str2 = "Hello World";
 
@@ -21,5 +24,10 @@ public class Reverse_String {
 			System.out.println("Reverse String is:" + ch[i]);
 		}
 
+		// Using CharAt(int index) method
+		String str3 = "Welcome to Java";
+		for (int i = str3.length() - 1; i >= 0; i--) {
+			System.out.println("Reverse string is:" + str3.charAt(i));
+		}
 	}
 }

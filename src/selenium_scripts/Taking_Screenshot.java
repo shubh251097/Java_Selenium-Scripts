@@ -15,27 +15,27 @@ import com.google.common.io.Files;
 public class Taking_Screenshot {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
-		
-		
-			WebDriver driver = new ChromeDriver();
-			driver.get("https://rahulshettyacademy.com/AutomationPractice/");
-			driver.manage().deleteAllCookies();
-			driver.manage().window().maximize();
-			Thread.sleep(2000);
-			
-			String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-			TakesScreenshot ts = (TakesScreenshot)driver;
-			
-			File srcFile = ts.getScreenshotAs(OutputType.FILE);
-			
-			//File destFile = new File("C:\\Users\\Shubham\\Desktop\\SSQUARE\\ScreenShots\\img1.jpg");
 
-			File destFile = new File("C:\\\\Users\\\\Shubham\\\\Desktop\\\\SSQUARE\\\\ScreenShots\\Screenshot123_" + timestamp + ".jpg");
-			Files.copy(srcFile,destFile);
-			Thread.sleep(2000);
-			System.out.println("ScreenShot Captured");
-		}
-	
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		driver.manage().deleteAllCookies();
+		driver.manage().window().maximize();
+		Thread.sleep(2000);
+
+		String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+		TakesScreenshot ts = (TakesScreenshot) driver;
+
+		File srcFile = ts.getScreenshotAs(OutputType.FILE);
+
+		// File destFile = new
+		// File("C:\\Users\\Shubham\\Desktop\\SSQUARE\\ScreenShots\\img1.jpg");
+
+		File destFile = new File(
+				"C:\\\\Users\\\\Shubham\\\\Desktop\\\\SSQUARE\\\\ScreenShots\\Screenshot1235_" + timestamp + ".jpg");
+		Files.copy(srcFile, destFile);
+		Thread.sleep(2000);
+		System.out.println("ScreenShot Captured");
+
+	}
+
 }
-
-
