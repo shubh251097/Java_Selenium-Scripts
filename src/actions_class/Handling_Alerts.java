@@ -10,7 +10,7 @@ public class Handling_Alerts {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.get("");
+		driver.get("google.com");
 
 	}
 
