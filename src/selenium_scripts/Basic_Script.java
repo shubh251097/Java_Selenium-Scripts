@@ -16,8 +16,8 @@ public class Basic_Script {
 		driver = new ChromeDriver();
 		Thread.sleep(2000);
 
-		// driver.close();
-		driver.quit();
+		driver.close();
+		// driver.quit();
 
 	}
 
