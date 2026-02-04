@@ -19,7 +19,7 @@ public class Handling_Links {
 		// link1.click();
 		System.out.println(link1.isDisplayed());
 		System.out.println(link1.isEnabled());
-		// System.out.println(link1.isSelected());
+		System.out.println(link1.isSelected());
 
 		link1.click();
 		String actualURL = driver.getCurrentUrl();
