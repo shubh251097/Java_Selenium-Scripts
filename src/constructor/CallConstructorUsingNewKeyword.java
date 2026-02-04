@@ -1,6 +1,8 @@
 package constructor;
 
 class Demo {
+	public char[] hashCode;
+
 	Demo() {
 		System.out.println("Constructor called!");
 	}
@@ -10,8 +12,9 @@ class Demo {
 public class CallConstructorUsingNewKeyword {
 
 	public static void main(String[] args) {
-
-		Demo obj1 = new Demo(); // 👈 Constructor is called here
+		Demo obj1 = new Demo(); // Constructor called!
+		System.out.println("Object created!");
+		System.out.println(obj1.hashCode);
 
 	}
 

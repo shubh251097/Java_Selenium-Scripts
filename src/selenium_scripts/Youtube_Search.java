@@ -25,7 +25,9 @@ public class Youtube_Search {
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
 		Thread.sleep(5000);
+
 		// driver.close();
+		driver.quit();
 
 	}
 
