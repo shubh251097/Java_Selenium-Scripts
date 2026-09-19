@@ -10,6 +10,8 @@ public class Handling_Alerts {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+
 		driver.get("https://demo.automationtesting.in/Alerts.html");
 
 		Thread.sleep(2000);

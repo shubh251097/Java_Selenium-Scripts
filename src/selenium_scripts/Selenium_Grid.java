@@ -31,6 +31,6 @@ public class Selenium_Grid {
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
-	}
 
+	}
 }

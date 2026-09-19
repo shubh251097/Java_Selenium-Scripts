@@ -20,7 +20,6 @@ public class Handling_SSL_Certificate {
 		driver.get("https://www.redbus.in/");
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
-
 	}
 
 }

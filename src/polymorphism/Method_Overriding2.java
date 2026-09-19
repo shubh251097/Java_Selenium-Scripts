@@ -18,7 +18,7 @@ public class Method_Overriding2 extends Method_Overriding {
 	}
 
 	public static void main(String[] args) {
-		Method_Overriding ovr = new Method_Overriding();
+		Method_Overriding2 ovr = new Method_Overriding2();
 		ovr.LaunchBrowser();
 
 	}
